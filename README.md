@@ -19,6 +19,7 @@ pip install virtualenv
 **Step 1:** Clone the LambdaTest’s python-robot-framework repository and navigate to the code directory as shown below:
 ```bash
 git clone repository
+install intellibot plugin from ./plugin on disk, which provides robot framework sytax intellisense
 ```
 **Step 2:** Create a virtual environment in your project folder the environment name is arbitrary.
 ```bash
