@@ -1,36 +1,122 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.0 on win32)" generated="20221001 10:58:12.372" rpa="false" schemaversion="3">
-<suite id="s1" name="Sample Test" source="D:\robot\Tests\sample_test.robot">
+<robot generator="Robot 5.0.1 (Python 3.10.0 on win32)" generated="20221002 18:18:38.406" rpa="false" schemaversion="3">
+<suite id="s1" name="Sample Test" source="D:\robotdebug\Tests\sample_test.robot">
 <test id="s1-t1" name="Example of connecting to Lambdatest via Robot Framework" line="13">
 <kw name="Open test browser" library="Common" type="SETUP">
-<kw name="Debug" library="DebugLibrary">
-<doc>Open a interactive shell, run any RobotFramework keywords.</doc>
-<kw name="Log To Console" library="BuiltIn">
-<arg>${REMOTE_URL}</arg>
-<doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221001 10:58:16.116" endtime="20221001 10:58:16.117"/>
-</kw>
-<status status="PASS" starttime="20221001 10:58:12.641" endtime="20221001 10:58:21.350"/>
-</kw>
 <kw name="Open Browser" library="Selenium2Library">
 <arg>https://lambdatest.github.io/sample-todo-app/</arg>
 <arg>browser=${BROWSER}</arg>
 <arg>remote_url=${REMOTE_URL}</arg>
 <arg>desired_capabilities=${CAPABILITIES}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20221001 10:58:21.821" level="INFO">Cannot capture screenshot because no browser is open.</msg>
-<status status="PASS" starttime="20221001 10:58:21.819" endtime="20221001 10:58:21.821"/>
-</kw>
-<msg timestamp="20221001 10:58:21.351" level="INFO">Opening browser 'chrome' to base url 'https://lambdatest.github.io/sample-todo-app/' through remote server at 'http://%'baoshenyi':%'4ErofDT8Nry0d6HiLy2MnypHvBP1MmA8ZJaZ3zqRNBhyYipmAh'@hub.lambdatest.com/wd/hub'.</msg>
-<msg timestamp="20221001 10:58:21.824" level="FAIL">WebDriverException: Message: Unauthorized, either Username or AccessKey is invalid.
-</msg>
-<status status="FAIL" starttime="20221001 10:58:21.350" endtime="20221001 10:58:21.828"/>
+<msg timestamp="20221002 18:18:38.692" level="INFO">Opening browser 'chrome' to base url 'https://lambdatest.github.io/sample-todo-app/' through remote server at 'https://baoshenyi:4ErofDT8Nry0d6HiLy2MnypHvBP1MmA8ZJaZ3zqRNBhyYipmAh@hub.lambdatest.com/wd/hub'.</msg>
+<status status="PASS" starttime="20221002 18:18:38.690" endtime="20221002 18:18:46.005"/>
 </kw>
 <timeout value="50 minutes"/>
-<status status="FAIL" starttime="20221001 10:58:12.641" endtime="20221001 10:58:21.831"/>
+<status status="PASS" starttime="20221002 18:18:38.690" endtime="20221002 18:18:46.006"/>
 </kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>name:li1</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221002 18:18:46.312" level="INFO">Current page contains element 'name:li1'.</msg>
+<status status="PASS" starttime="20221002 18:18:46.007" endtime="20221002 18:18:46.313"/>
+</kw>
+<kw name="Page Should Contain Element" library="Selenium2Library">
+<arg>name:li2</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20221002 18:18:46.624" level="INFO">Current page contains element 'name:li2'.</msg>
+<status status="PASS" starttime="20221002 18:18:46.314" endtime="20221002 18:18:46.624"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>name:li1</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221002 18:18:46.627" level="INFO">Clicking button 'name:li1'.</msg>
+<status status="PASS" starttime="20221002 18:18:46.625" endtime="20221002 18:18:47.606"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>name:li2</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221002 18:18:47.609" level="INFO">Clicking button 'name:li2'.</msg>
+<status status="PASS" starttime="20221002 18:18:47.608" endtime="20221002 18:18:48.629"/>
+</kw>
+<kw name="Input Text" library="Selenium2Library">
+<arg>id:sampletodotext</arg>
+<arg>Yey Let's add it to list</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20221002 18:18:48.632" level="INFO">Typing text 'Yey Let's add it to list' into text field 'id:sampletodotext'.</msg>
+<status status="PASS" starttime="20221002 18:18:48.630" endtime="20221002 18:18:49.692"/>
+</kw>
+<kw name="Click Button" library="Selenium2Library">
+<arg>id:addbutton</arg>
+<doc>Clicks the button identified by ``locator``.</doc>
+<msg timestamp="20221002 18:18:49.694" level="INFO">Clicking button 'id:addbutton'.</msg>
+<status status="PASS" starttime="20221002 18:18:49.693" endtime="20221002 18:18:50.659"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>I am the iron man</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20221002 18:18:50.660" endtime="20221002 18:18:50.663"/>
+</kw>
+<kw name="Get Text" library="Selenium2Library">
+<var>${response}</var>
+<arg>xpath=/html/body/div/div/div/ul/li[6]/span</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<msg timestamp="20221002 18:18:51.253" level="INFO">${response} = Yey Let's add it to list</msg>
+<status status="PASS" starttime="20221002 18:18:50.664" endtime="20221002 18:18:51.253"/>
+</kw>
+<try>
+<branch type="TRY">
+<kw name="Should Be Equal As Strings" library="BuiltIn">
+<arg>${response}</arg>
+<arg>Yey Let's add it to list</arg>
+<doc>Fails if objects are unequal after converting them to strings.</doc>
+<status status="PASS" starttime="20221002 18:18:51.256" endtime="20221002 18:18:51.258"/>
+</kw>
+<status status="PASS" starttime="20221002 18:18:51.255" endtime="20221002 18:18:51.258"/>
+</branch>
+<branch type="EXCEPT">
+<pattern>Error message</pattern>
+<kw name="Log" library="BuiltIn">
+<arg>Catches any exception.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221002 18:18:51.259" endtime="20221002 18:18:51.259"/>
+</kw>
+<kw name="Log" library="BuiltIn">
+<arg>Useful for handling unexpected exceptions.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" starttime="20221002 18:18:51.260" endtime="20221002 18:18:51.260"/>
+</kw>
+<kw name="Create List" library="BuiltIn">
+<var>@{exceptions}</var>
+<doc>Returns a list containing given items.</doc>
+<status status="NOT RUN" starttime="20221002 18:18:51.261" endtime="20221002 18:18:51.261"/>
+</kw>
+<kw name="Append To List" library="Collections">
+<arg>${exceptions}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="NOT RUN" starttime="20221002 18:18:51.261" endtime="20221002 18:18:51.261"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${exceptions}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20221002 18:18:51.262" endtime="20221002 18:18:51.262"/>
+</kw>
+<kw name="Execute Javascript" library="Selenium2Library">
+<arg>lambda-exceptions</arg>
+<arg>ARGUMENTS</arg>
+<arg>${exceptions}</arg>
+<doc>Executes the given JavaScript code with possible arguments.</doc>
+<status status="NOT RUN" starttime="20221002 18:18:51.262" endtime="20221002 18:18:51.263"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>${TEST_STATUS}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="NOT RUN" starttime="20221002 18:18:51.263" endtime="20221002 18:18:51.263"/>
+</kw>
+<status status="NOT RUN" starttime="20221002 18:18:51.258" endtime="20221002 18:18:51.264"/>
+</branch>
+<status status="PASS" starttime="20221002 18:18:51.255" endtime="20221002 18:18:51.264"/>
+</try>
 <kw name="Close test browser" library="Common" type="TEARDOWN">
 <kw name="Run Keyword If" library="BuiltIn">
 <arg>'${REMOTE_URL}' != ''</arg>
@@ -38,33 +124,38 @@
 <arg>${TEST_NAME}</arg>
 <arg>${TEST_STATUS}</arg>
 <doc>Runs the given keyword with the given arguments, if ``condition`` is true.</doc>
-<msg timestamp="20221001 10:58:21.836" level="FAIL">Evaluating expression ''http://%'baoshenyi':%'4ErofDT8Nry0d6HiLy2MnypHvBP1MmA8ZJaZ3zqRNBhyYipmAh'@hub.lambdatest.com/wd/hub' != ''' failed: SyntaxError: invalid decimal literal (&lt;string&gt;, line 1)</msg>
-<status status="FAIL" starttime="20221001 10:58:21.835" endtime="20221001 10:58:21.838"/>
+<kw name="Report Lambdatest Status" library="LambdaTestStatus">
+<arg>${TEST_NAME}</arg>
+<arg>${TEST_STATUS}</arg>
+<msg timestamp="20221002 18:18:51.270" level="INFO">Executing JavaScript:
+lambda-status=passed
+Without any arguments.</msg>
+<msg timestamp="20221002 18:18:52.566" level="INFO">Executing JavaScript:
+lambda-name=Example of connecting to Lambdatest via Robot Framework
+Without any arguments.</msg>
+<status status="PASS" starttime="20221002 18:18:51.268" endtime="20221002 18:18:53.878"/>
+</kw>
+<status status="PASS" starttime="20221002 18:18:51.267" endtime="20221002 18:18:53.878"/>
 </kw>
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20221001 10:58:21.838" endtime="20221001 10:58:21.839"/>
+<status status="PASS" starttime="20221002 18:18:53.878" endtime="20221002 18:18:54.264"/>
 </kw>
-<status status="FAIL" starttime="20221001 10:58:21.833" endtime="20221001 10:58:21.840">Evaluating expression ''http://%'baoshenyi':%'4ErofDT8Nry0d6HiLy2MnypHvBP1MmA8ZJaZ3zqRNBhyYipmAh'@hub.lambdatest.com/wd/hub' != ''' failed: SyntaxError: invalid decimal literal (&lt;string&gt;, line 1)</status>
+<status status="PASS" starttime="20221002 18:18:51.265" endtime="20221002 18:18:54.265"/>
 </kw>
 <timeout value="50 minutes"/>
-<status status="FAIL" starttime="20221001 10:58:12.640" endtime="20221001 10:58:21.841">Setup failed:
-WebDriverException: Message: Unauthorized, either Username or AccessKey is invalid.
-
-
-Also teardown failed:
-Evaluating expression ''http://%'baoshenyi':%'4ErofDT8Nry0d6HiLy2MnypHvBP1MmA8ZJaZ3zqRNBhyYipmAh'@hub.lambdatest.com/wd/hub' != ''' failed: SyntaxError: invalid decimal literal (&lt;string&gt;, line 1)</status>
+<status status="PASS" starttime="20221002 18:18:38.689" endtime="20221002 18:18:54.266"/>
 </test>
-<status status="FAIL" starttime="20221001 10:58:12.373" endtime="20221001 10:58:21.847"/>
+<status status="PASS" starttime="20221002 18:18:38.408" endtime="20221002 18:18:54.270"/>
 </suite>
 <statistics>
 <total>
-<stat pass="0" fail="1" skip="0">All Tests</stat>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="0" fail="1" skip="0" id="s1" name="Sample Test">Sample Test</stat>
+<stat pass="1" fail="0" skip="0" id="s1" name="Sample Test">Sample Test</stat>
 </suite>
 </statistics>
 <errors>

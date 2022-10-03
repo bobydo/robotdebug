@@ -24,7 +24,7 @@ Example of connecting to Lambdatest via Robot Framework
 	${response}    Get Text    xpath=/html/body/div/div/div/ul/li[6]/span
 	
 	TRY
-		Should Be Equal As Strings    ${response}    Yey Let's add it to lis
+		Should Be Equal As Strings    ${response}    Yey Let's add it to list
 	EXCEPT  Error message
 	    Log    Catches any exception.
 	    Log    Useful for handling unexpected exceptions.

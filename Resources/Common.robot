@@ -5,12 +5,12 @@ Library         BuiltIn
 Library         DebugLibrary
 
 *** Variables ***
-${LT_USERNAME}=         'xxx'
-${LT_ACCESS_KEY}=       'xxx'
+${LT_USERNAME}=         baoshenyi
+${LT_ACCESS_KEY}=       4ErofDT8Nry0d6HiLy2MnypHvBP1MmA8ZJaZ3zqRNBhyYipmAh
 ${BROWSER}          ${ROBOT_BROWSER}
 &{options}          browserName=${browserName}     platform=${platform}       version=${version}        visual=${visual}       network=${network}        console=${console}      name=RobotFramework Lambda Test
 &{CAPABILITIES}     LT:Options=&{options}
-${REMOTE_URL}       http://%${LT_USERNAME}:%${LT_ACCESS_KEY}@hub.lambdatest.com/wd/hub
+${REMOTE_URL}       https://${LT_USERNAME}:${LT_ACCESS_KEY}@hub.lambdatest.com/wd/hub
 ${CAPABILITIES}=    Set Suite Variable  ${CAPABILITIES}
 ${REMOTE_URL}=      Set Suite Variable  ${REMOTE_URL}
 ${TIMEOUT}          3000
@@ -19,7 +19,7 @@ ${TIMEOUT}          3000
 
 Open test browser
     [Timeout]   ${TIMEOUT}
-    Debug
+    #   Debug
     Open browser  https://lambdatest.github.io/sample-todo-app/  browser=${BROWSER}
     ...  remote_url=${REMOTE_URL}
     ...  desired_capabilities=${CAPABILITIES}
