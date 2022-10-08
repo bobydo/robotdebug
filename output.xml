@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0.1 (Python 3.10.0 on win32)" generated="20221002 18:18:38.406" rpa="false" schemaversion="3">
-<suite id="s1" name="Sample Test" source="D:\robotdebug\Tests\sample_test.robot">
+<robot generator="Robot 5.0.1 (Python 3.10.0 on win32)" generated="20221008 07:34:48.371" rpa="false" schemaversion="3">
+<suite id="s1" name="Sample Test" source="E:\robotdebug\Tests\sample_test.robot">
 <test id="s1-t1" name="Example of connecting to Lambdatest via Robot Framework" line="13">
 <kw name="Open test browser" library="Common" type="SETUP">
 <kw name="Open Browser" library="Selenium2Library">
@@ -9,60 +9,60 @@
 <arg>remote_url=${REMOTE_URL}</arg>
 <arg>desired_capabilities=${CAPABILITIES}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20221002 18:18:38.692" level="INFO">Opening browser 'chrome' to base url 'https://lambdatest.github.io/sample-todo-app/' through remote server at 'https://baoshenyi:4ErofDT8Nry0d6HiLy2MnypHvBP1MmA8ZJaZ3zqRNBhyYipmAh@hub.lambdatest.com/wd/hub'.</msg>
-<status status="PASS" starttime="20221002 18:18:38.690" endtime="20221002 18:18:46.005"/>
+<msg timestamp="20221008 07:34:48.652" level="INFO">Opening browser 'chrome' to base url 'https://lambdatest.github.io/sample-todo-app/' through remote server at 'https://baoshenyi:4ErofDT8Nry0d6HiLy2MnypHvBP1MmA8ZJaZ3zqRNBhyYipmAh@hub.lambdatest.com/wd/hub'.</msg>
+<status status="PASS" starttime="20221008 07:34:48.650" endtime="20221008 07:34:53.777"/>
 </kw>
 <timeout value="50 minutes"/>
-<status status="PASS" starttime="20221002 18:18:38.690" endtime="20221002 18:18:46.006"/>
+<status status="PASS" starttime="20221008 07:34:48.650" endtime="20221008 07:34:53.778"/>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <arg>name:li1</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221002 18:18:46.312" level="INFO">Current page contains element 'name:li1'.</msg>
-<status status="PASS" starttime="20221002 18:18:46.007" endtime="20221002 18:18:46.313"/>
+<msg timestamp="20221008 07:34:54.040" level="INFO">Current page contains element 'name:li1'.</msg>
+<status status="PASS" starttime="20221008 07:34:53.778" endtime="20221008 07:34:54.040"/>
 </kw>
 <kw name="Page Should Contain Element" library="Selenium2Library">
 <arg>name:li2</arg>
 <doc>Verifies that element ``locator`` is found on the current page.</doc>
-<msg timestamp="20221002 18:18:46.624" level="INFO">Current page contains element 'name:li2'.</msg>
-<status status="PASS" starttime="20221002 18:18:46.314" endtime="20221002 18:18:46.624"/>
+<msg timestamp="20221008 07:34:54.284" level="INFO">Current page contains element 'name:li2'.</msg>
+<status status="PASS" starttime="20221008 07:34:54.041" endtime="20221008 07:34:54.284"/>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <arg>name:li1</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221002 18:18:46.627" level="INFO">Clicking button 'name:li1'.</msg>
-<status status="PASS" starttime="20221002 18:18:46.625" endtime="20221002 18:18:47.606"/>
+<msg timestamp="20221008 07:34:54.288" level="INFO">Clicking button 'name:li1'.</msg>
+<status status="PASS" starttime="20221008 07:34:54.286" endtime="20221008 07:34:55.137"/>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <arg>name:li2</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221002 18:18:47.609" level="INFO">Clicking button 'name:li2'.</msg>
-<status status="PASS" starttime="20221002 18:18:47.608" endtime="20221002 18:18:48.629"/>
+<msg timestamp="20221008 07:34:55.140" level="INFO">Clicking button 'name:li2'.</msg>
+<status status="PASS" starttime="20221008 07:34:55.138" endtime="20221008 07:34:55.940"/>
 </kw>
 <kw name="Input Text" library="Selenium2Library">
 <arg>id:sampletodotext</arg>
 <arg>Yey Let's add it to list</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20221002 18:18:48.632" level="INFO">Typing text 'Yey Let's add it to list' into text field 'id:sampletodotext'.</msg>
-<status status="PASS" starttime="20221002 18:18:48.630" endtime="20221002 18:18:49.692"/>
+<msg timestamp="20221008 07:34:55.943" level="INFO">Typing text 'Yey Let's add it to list' into text field 'id:sampletodotext'.</msg>
+<status status="PASS" starttime="20221008 07:34:55.941" endtime="20221008 07:34:56.828"/>
 </kw>
 <kw name="Click Button" library="Selenium2Library">
 <arg>id:addbutton</arg>
 <doc>Clicks the button identified by ``locator``.</doc>
-<msg timestamp="20221002 18:18:49.694" level="INFO">Clicking button 'id:addbutton'.</msg>
-<status status="PASS" starttime="20221002 18:18:49.693" endtime="20221002 18:18:50.659"/>
+<msg timestamp="20221008 07:34:56.831" level="INFO">Clicking button 'id:addbutton'.</msg>
+<status status="PASS" starttime="20221008 07:34:56.829" endtime="20221008 07:34:57.657"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>I am the iron man</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="PASS" starttime="20221002 18:18:50.660" endtime="20221002 18:18:50.663"/>
+<status status="PASS" starttime="20221008 07:34:57.658" endtime="20221008 07:34:57.660"/>
 </kw>
 <kw name="Get Text" library="Selenium2Library">
 <var>${response}</var>
 <arg>xpath=/html/body/div/div/div/ul/li[6]/span</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<msg timestamp="20221002 18:18:51.253" level="INFO">${response} = Yey Let's add it to list</msg>
-<status status="PASS" starttime="20221002 18:18:50.664" endtime="20221002 18:18:51.253"/>
+<msg timestamp="20221008 07:34:58.169" level="INFO">${response} = Yey Let's add it to list</msg>
+<status status="PASS" starttime="20221008 07:34:57.662" endtime="20221008 07:34:58.169"/>
 </kw>
 <try>
 <branch type="TRY">
@@ -70,52 +70,52 @@
 <arg>${response}</arg>
 <arg>Yey Let's add it to list</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" starttime="20221002 18:18:51.256" endtime="20221002 18:18:51.258"/>
+<status status="PASS" starttime="20221008 07:34:58.172" endtime="20221008 07:34:58.174"/>
 </kw>
-<status status="PASS" starttime="20221002 18:18:51.255" endtime="20221002 18:18:51.258"/>
+<status status="PASS" starttime="20221008 07:34:58.171" endtime="20221008 07:34:58.174"/>
 </branch>
 <branch type="EXCEPT">
 <pattern>Error message</pattern>
 <kw name="Log" library="BuiltIn">
 <arg>Catches any exception.</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" starttime="20221002 18:18:51.259" endtime="20221002 18:18:51.259"/>
+<status status="NOT RUN" starttime="20221008 07:34:58.175" endtime="20221008 07:34:58.175"/>
 </kw>
 <kw name="Log" library="BuiltIn">
 <arg>Useful for handling unexpected exceptions.</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="NOT RUN" starttime="20221002 18:18:51.260" endtime="20221002 18:18:51.260"/>
+<status status="NOT RUN" starttime="20221008 07:34:58.175" endtime="20221008 07:34:58.176"/>
 </kw>
 <kw name="Create List" library="BuiltIn">
 <var>@{exceptions}</var>
 <doc>Returns a list containing given items.</doc>
-<status status="NOT RUN" starttime="20221002 18:18:51.261" endtime="20221002 18:18:51.261"/>
+<status status="NOT RUN" starttime="20221008 07:34:58.176" endtime="20221008 07:34:58.176"/>
 </kw>
 <kw name="Append To List" library="Collections">
 <arg>${exceptions}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" starttime="20221002 18:18:51.261" endtime="20221002 18:18:51.261"/>
+<status status="NOT RUN" starttime="20221008 07:34:58.177" endtime="20221008 07:34:58.177"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${exceptions}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20221002 18:18:51.262" endtime="20221002 18:18:51.262"/>
+<status status="NOT RUN" starttime="20221008 07:34:58.177" endtime="20221008 07:34:58.178"/>
 </kw>
 <kw name="Execute Javascript" library="Selenium2Library">
 <arg>lambda-exceptions</arg>
 <arg>ARGUMENTS</arg>
 <arg>${exceptions}</arg>
 <doc>Executes the given JavaScript code with possible arguments.</doc>
-<status status="NOT RUN" starttime="20221002 18:18:51.262" endtime="20221002 18:18:51.263"/>
+<status status="NOT RUN" starttime="20221008 07:34:58.178" endtime="20221008 07:34:58.178"/>
 </kw>
 <kw name="Log To Console" library="BuiltIn">
 <arg>${TEST_STATUS}</arg>
 <doc>Logs the given message to the console.</doc>
-<status status="NOT RUN" starttime="20221002 18:18:51.263" endtime="20221002 18:18:51.263"/>
+<status status="NOT RUN" starttime="20221008 07:34:58.179" endtime="20221008 07:34:58.179"/>
 </kw>
-<status status="NOT RUN" starttime="20221002 18:18:51.258" endtime="20221002 18:18:51.264"/>
+<status status="NOT RUN" starttime="20221008 07:34:58.174" endtime="20221008 07:34:58.179"/>
 </branch>
-<status status="PASS" starttime="20221002 18:18:51.255" endtime="20221002 18:18:51.264"/>
+<status status="PASS" starttime="20221008 07:34:58.171" endtime="20221008 07:34:58.179"/>
 </try>
 <kw name="Close test browser" library="Common" type="TEARDOWN">
 <kw name="Run Keyword If" library="BuiltIn">
@@ -127,26 +127,26 @@
 <kw name="Report Lambdatest Status" library="LambdaTestStatus">
 <arg>${TEST_NAME}</arg>
 <arg>${TEST_STATUS}</arg>
-<msg timestamp="20221002 18:18:51.270" level="INFO">Executing JavaScript:
+<msg timestamp="20221008 07:34:58.186" level="INFO">Executing JavaScript:
 lambda-status=passed
 Without any arguments.</msg>
-<msg timestamp="20221002 18:18:52.566" level="INFO">Executing JavaScript:
+<msg timestamp="20221008 07:34:59.462" level="INFO">Executing JavaScript:
 lambda-name=Example of connecting to Lambdatest via Robot Framework
 Without any arguments.</msg>
-<status status="PASS" starttime="20221002 18:18:51.268" endtime="20221002 18:18:53.878"/>
+<status status="PASS" starttime="20221008 07:34:58.184" endtime="20221008 07:35:00.751"/>
 </kw>
-<status status="PASS" starttime="20221002 18:18:51.267" endtime="20221002 18:18:53.878"/>
+<status status="PASS" starttime="20221008 07:34:58.182" endtime="20221008 07:35:00.751"/>
 </kw>
 <kw name="Close All Browsers" library="Selenium2Library">
 <doc>Closes all open browsers and resets the browser cache.</doc>
-<status status="PASS" starttime="20221002 18:18:53.878" endtime="20221002 18:18:54.264"/>
+<status status="PASS" starttime="20221008 07:35:00.752" endtime="20221008 07:35:01.042"/>
 </kw>
-<status status="PASS" starttime="20221002 18:18:51.265" endtime="20221002 18:18:54.265"/>
+<status status="PASS" starttime="20221008 07:34:58.181" endtime="20221008 07:35:01.042"/>
 </kw>
 <timeout value="50 minutes"/>
-<status status="PASS" starttime="20221002 18:18:38.689" endtime="20221002 18:18:54.266"/>
+<status status="PASS" starttime="20221008 07:34:48.649" endtime="20221008 07:35:01.043"/>
 </test>
-<status status="PASS" starttime="20221002 18:18:38.408" endtime="20221002 18:18:54.270"/>
+<status status="PASS" starttime="20221008 07:34:48.373" endtime="20221008 07:35:01.048"/>
 </suite>
 <statistics>
 <total>
